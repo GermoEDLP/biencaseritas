@@ -1,0 +1,42 @@
+<!-- Start Menu -->
+<div class="menu-box" id="productos">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="heading-title text-center" style="margin-top: 25px;">
+            <h2>Productos</h2>
+            <p>Estos son nuestros productos./p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="special-menu text-center">
+            <div class="button-group filter-button-group">
+              <button class="active" data-filter="*">Todos</button>
+              <button data-filter=".ravioles">Ravioles</button>
+              <button data-filter=".sorrentinos">Sorrentinos</button>
+              <button data-filter=".canelones">Canelones</button>
+              <button data-filter=".tallarines">Tallarines</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      <div class="row special-list">
+        <div class="col-lg-4 col-md-6 special-grid drinks {{prod.class}}" *ngFor="let prod of menu">
+          <div class="gallery-single fix">
+            <img src="assets/images/{{prod.img}}.jpg" class="img-fluid" alt="Image">
+            <div class="why-text">
+              <h4>{{prod.name}}</h4>
+              <p>{{prod.subname}}</p>
+              <h5> $ {{prod.price}}</h5>
+            </div>
+          </div>
+        </div>
+        
+       
+      </div>
+    </div>
+  </div>
+  <!-- End Menu -->

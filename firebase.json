@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/biencaseritas",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

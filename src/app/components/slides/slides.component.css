@@ -1,0 +1,41 @@
+.page-header-own {
+  height: 580px;
+  width: 100%;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+}
+
+.row {
+  height: 100%;
+  align-items: center;
+}
+
+.row h1 {
+  font-family: "Arbutus Slab", serif;
+  font-weight: 500;
+  font-size: 64px;
+  color: #fff;
+}
+
+.row p {
+  font-size: 18px;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .page-header-own {
+    text-align: center;
+  }
+  .row h1 {
+    font-size: 22px;
+  }
+  .row p{
+    font-size: 14px;
+  }
+}
+
