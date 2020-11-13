@@ -7,6 +7,8 @@ import { MenuComponent } from './menu/menu.component';
 import { ResenasComponent } from './resenas/resenas.component';
 import { SlidesComponent } from './slides/slides.component';
 
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+
 
 const componentes = [
   AboutComponent,
@@ -21,7 +23,8 @@ const componentes = [
 @NgModule({
   declarations: componentes,
   imports: [
-    CommonModule
+    CommonModule,
+    Ng2SearchPipeModule
   ],
   exports: componentes
 })
