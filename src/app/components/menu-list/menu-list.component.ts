@@ -1,23 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-
-export interface Product {
-  name: string;
-  class: string;
-  img: string;
-  subname: string;
-  price: string;
-}
+import { Product } from '../menu/menu.component';
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css'],
+  selector: 'app-menu-list',
+  templateUrl: './menu-list.component.html',
+  styleUrls: ['./menu-list.component.css']
 })
-
-
-export class MenuComponent implements OnInit {
-
-  term:string = '';
+export class MenuListComponent implements OnInit {
 
   menu: Product[] = [
     {
@@ -106,7 +95,9 @@ export class MenuComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
+
 }

@@ -8,6 +8,7 @@ import { ResenasComponent } from './resenas/resenas.component';
 import { SlidesComponent } from './slides/slides.component';
 
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { MenuListComponent } from './menu-list/menu-list.component';
 
 
 const componentes = [
@@ -16,7 +17,8 @@ const componentes = [
   GalleryComponent,
   MenuComponent,
   ResenasComponent,
-  SlidesComponent
+  SlidesComponent,
+  MenuListComponent
 ]
 
 

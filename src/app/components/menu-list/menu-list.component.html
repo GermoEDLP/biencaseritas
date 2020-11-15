@@ -1,0 +1,40 @@
+<div class="menu-list">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active">
+            Ravioles
+          </a>
+          <a class="list-group-item list-group-item-action" *ngFor="let prod of menu | slice: 0: 2"
+            ><span class="name">{{prod.name}} </span> - <span class="subname">{{prod.subname}}</span><span class="pull-right">$ {{prod.price}}</span></a
+          >
+        </div>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active">
+            Sorrentinos
+          </a>
+          <a class="list-group-item list-group-item-action" *ngFor="let prod of menu | slice: 2: 7"
+            ><span class="name">{{prod.name}} </span> - <span class="subname">{{prod.subname}}</span><span class="pull-right">$ {{prod.price}}</span></a
+          >
+        </div>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active">
+            Canelones
+          </a>
+          <a class="list-group-item list-group-item-action" *ngFor="let prod of menu | slice: 7: 10"
+            ><span class="name">{{prod.name}} </span> - <span class="subname">{{prod.subname}}</span><span class="pull-right">$ {{prod.price}}</span></a
+          >
+        </div>
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active">
+            Tallarines
+          </a>
+          <a class="list-group-item list-group-item-action" *ngFor="let prod of menu | slice: 10: 12"
+            ><span class="name">{{prod.name}} </span> - <span class="subname">{{prod.subname}}</span><span class="pull-right">$ {{prod.price}}</span></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

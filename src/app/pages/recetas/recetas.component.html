@@ -1,0 +1,46 @@
+	<!-- Start All Pages -->
+	<div class="all-page-title page-breadcrumb">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>Blog</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End All Pages -->
+
+	<!-- Start blog -->
+	<div class="blog-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="heading-title text-center">
+						<h2>Blog</h2>
+						<p>Donde las recetas, los tips y los consejos se juntan a charlar.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 col-12" *ngFor="let item of [1,2,3,4,5,6]">
+					<div class="blog-box-inner">
+						<div class="blog-img-box">
+							<img class="img-fluid" src="assets/images/blog-img-01.jpg" alt="">
+						</div>
+						<div class="blog-detail">
+							<h4>Tips para salsa bolognesa.</h4>
+							<ul>
+								<li><span>Posteado por Admin</span></li>
+								<li>|</li>
+								<li><span>10 Noviembre 2020</span></li>
+							</ul>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio ante sodales augue, eget lacinia lectus erat et sem. </p>
+							<p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. </p>
+							<a class="btn btn-lg btn-circle btn-outline-new-white" [routerLink]="['/receta/1']">Leer más</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End blog -->
